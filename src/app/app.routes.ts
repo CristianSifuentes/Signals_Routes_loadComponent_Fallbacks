@@ -20,6 +20,14 @@ export const routes: Routes = [
     loadComponent: () => import('./calculator/calculator.component').then(m=> m.CalculatorComponent)
   },
   {
+    path: 'statistics',
+    loadComponent: () => import('./statistics/statistics.component').then(m=> m.StatisticsComponent)
+  },
+  {
+    path: 'computed',
+    loadComponent: () => import('./media-library/media-library.component').then(m=> m.MediaLibraryComponent)
+  },
+  {
     path: '**',
     loadComponent: () => import('./not-found.component').then(m => m.NotFoundComponent),
   },

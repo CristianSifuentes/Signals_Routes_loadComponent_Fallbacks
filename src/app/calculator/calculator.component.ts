@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { CalculatorService } from '../calculator.service';
+import { CalculatorService } from '../services/calculator.service';
 
 @Component({
   imports: [FormsModule],
