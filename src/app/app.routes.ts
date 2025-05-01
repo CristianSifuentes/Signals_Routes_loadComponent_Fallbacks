@@ -16,8 +16,11 @@ export const routes: Routes = [
     ]
   },
   {
+    path: 'calculator',
+    loadComponent: () => import('./calculator/calculator.component').then(m=> m.CalculatorComponent)
+  },
+  {
     path: '**',
     loadComponent: () => import('./not-found.component').then(m => m.NotFoundComponent),
   },
-
 ];
